@@ -14,10 +14,12 @@ define( '_IMAGES_', _TP_.'/images' ); //images path
 add_action( 'wp_enqueue_scripts', 'load_js_css');
 function load_js_css() {
     wp_enqueue_style('swiper', _TP_ . '/css/swiper-bundle.min.css');
+    wp_enqueue_style('plyr', _TP_ . '/css/plyr.min.css');
     wp_enqueue_style('styles',  _TP_ . '/css/styles.css');
     wp_enqueue_style('media-styles', _TP_ . '/css/media.css');
 
     wp_enqueue_script('swiper', _TP_ . '/js/swiper-bundle.min.js',array('jquery'),null,false);
+    wp_enqueue_script('plyr', _TP_ . '/js/plyr.min.js',array('jquery'),null,false);
     wp_enqueue_script('script', _TP_ . '/js/script.js',array('jquery'),null,false);
 }
 

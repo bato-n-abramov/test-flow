@@ -5,7 +5,7 @@ if (is_category() || is_tax()) {
 } else {
     $blocks = get_field('blocks', $post->ID); 
 }
-
+// dd($blocks);
 ?>
 
 <?php if (empty($blocks)): ?>
